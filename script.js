@@ -9,4 +9,9 @@ window.document.addEventListener( "DOMContentLoaded", function () {
         document.querySelector("#resultado").innerHTML = inputText.toLowerCase()
     })
 
+    document.getElementById("btnPrimeira").addEventListener("click", function (){
+        let inputText = document.querySelector("#input-text").value
+        document.querySelector("#resultado").innerHTML = inputText[0].toUpperCase() + inputText.slice(1).toLowerCase()
+    })
+
 } )
